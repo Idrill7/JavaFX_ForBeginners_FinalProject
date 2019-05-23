@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="ASuPane" prefHeight="522.0" prefWidth="517.0" style="-fx-background-color: #253243;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignUpController">
+   <children>
+      <Label layoutX="6.0" layoutY="14.0" prefHeight="17.0" prefWidth="139.0" text="SignUp" textFill="#57c7b9">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Line endX="411.5" layoutX="39.0" layoutY="53.0" startX="-100.0" stroke="#57c7b9" />
+      <JFXTextField fx:id="fullName" focusColor="#42e4ce" labelFloat="true" layoutX="32.0" layoutY="140.0" prefHeight="25.0" prefWidth="460.0" promptText="Full Name" style="-fx-prompt-text-fill: #afbccd; -fx-text-inner-color: white;" unFocusColor="#eaeaea">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="email" focusColor="#42e4ce" labelFloat="true" layoutX="29.0" layoutY="219.0" prefHeight="25.0" prefWidth="460.0" promptText="Email" style="-fx-prompt-text-fill: #afbccd; -fx-text-inner-color: white;" unFocusColor="#eaeaea">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" focusColor="#42e4ce" labelFloat="true" layoutX="29.0" layoutY="302.0" prefHeight="25.0" prefWidth="460.0" promptText="Password" style="-fx-prompt-text-fill: #afbccd; -fx-text-inner-color: white;" unFocusColor="#eaeaea">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXCheckBox fx:id="checkTerms" checkedColor="#57c7b9" layoutX="32.0" layoutY="376.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="290.0" text="Agree with the terms and conditions" textAlignment="CENTER" textFill="#8095b2" unCheckedColor="#afbccd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXButton fx:id="btnSignUp" layoutX="171.0" layoutY="427.0" onAction="#signUp" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #57c7b9;" text="Sign Up">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnExit" cancelButton="true" layoutX="445.0" layoutY="11.0" onAction="#exit" ripplerFill="#25324200" style="-fx-background-color: transparent;" text="Exit" textFill="RED" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnLogin" layoutX="201.0" layoutY="466.0" onAction="#login" prefHeight="29.0" prefWidth="123.0" style="-fx-border-color: #57c7b9;" text="Login" textFill="#57c7b9">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <Circle fill="#1fffed8f" layoutX="87.0" layoutY="22.0" nodeOrientation="RIGHT_TO_LEFT" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#1fffed8f" layoutX="97.0" layoutY="32.0" nodeOrientation="RIGHT_TO_LEFT" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

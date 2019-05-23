@@ -1,0 +1,12 @@
+#anPane {
+    -fx-background-image:url("../img/back.jpg");
+    -fx-background-size: cover;
+}
+
+#btnReg {
+    -fx-background-color: #E8E9EC;
+}
+
+#btnLogin {
+    -fx-background-color: #2D3B55;
+}
